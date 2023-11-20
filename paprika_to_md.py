@@ -118,8 +118,8 @@ def json_manipulate(sourceFolder, targetFolder, resourceFolder, template):
                     recipe_directions = [i for i in recipe_directions if i]
                     directions = ""
                     if recipe_directions:
-                        for direction in recipe_directions:
-                            directions += "\n  " + str(direction)
+                        for index, direction in enumerate(recipe_directions, start=1):
+                            directions += f"\n {index}. {direction}"
                     recipe_categories = recipe_data["categories"]
                     recipe_tags = recipe_categories
                     # find and replace for the tags - based on dictionary file that I'm importing at the top
