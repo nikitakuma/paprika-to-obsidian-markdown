@@ -1,10 +1,15 @@
 ---
-name: $recipe_name
+tags: 
+- resources/recipe
+$recipe_tags
+dg-note-icon: recipe
+dg-publish: true
+title: $recipe_name
 source: $recipe_source
 ingredients: $recipe_ingredients
 difficulty: $recipe_difficulty
 photo_thumbnail: $recipe_photo
-image_url: $recipe_image_url
+banner: $recipe_image_url
 total_time: $recipe_total_time
 notes: |$recipe_notes
 nutritional_info: $recipe_nutritional_info
@@ -18,7 +23,6 @@ source_url: $recipe_source_url
 cook_time: $recipe_cook_time
 servings: $recipe_servings
 scale: $recipe_scale
-tags: $recipe_tags
 photos: $photo_list
 author: |$my_authors
 ---
